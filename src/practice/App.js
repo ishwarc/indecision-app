@@ -8,7 +8,7 @@ class Indecision extends React.Component {
     this.handleDeleteOptions = this.handleDeleteOptions.bind(this);
     this.handlePick = this.handlePick.bind(this);
     this.state = {
-      options : ['Ishwar', 'Senji']
+      options : ['Ishwar', '1234']
     };
 
   }
@@ -93,7 +93,7 @@ class Options extends React.Component {
       <div>
         <button onClick={this.props.handleDeleteOptions}>Remove All</button>
         {
-          this.props.options.map((option)=><p key={option}>{option}</p>)
+          this.options.map((option)=><p key={option}>{option}</p>)
         }
       </div>
     );
